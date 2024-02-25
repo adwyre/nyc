@@ -21,7 +21,7 @@ header {
 .logo {
 
 }
-button {
+#menu-button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border: none;
@@ -35,21 +35,24 @@ button {
   padding: 0;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 .menu-icon {
+  display: block;
   width: 3rem;
   height: 3rem;
   text-align: center;
   font-size: 2.4rem;
 }
-button:hover {
+#menu-button:hover {
   cursor: pointer;
   transform: scale(1.1,1.1);
   transition-delay: 0.1s;
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.0,0.4,0.4,1);
 }
-button:focus {
+#menu-button:focus, #menu-button:focus-within {
   width: 400px;
   height: 100vh;
   border-radius: 0px;
@@ -60,18 +63,44 @@ button:focus {
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.6,0.0,0.4,1);
 }
-
+#menu-button:focus .menu-icon, #menu-button:focus-within .menu-icon {
+  display: none;
+}
+.nav-links li {
+  text-align: left;
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+.nav-links li a:hover {
+  color: var(--highlight-color);
+}
 /* HERO */
 #hero {
   color: var(--primary-color);
   background-color: var(--highlight-color);
-  height: 100vh;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
-
+#hero h1 {
+  margin: auto;
+  font-size: max(min(6vw, 8rem), 2rem);
+  width: 60vw;
+  min-width: 1rem;
+}
 /* ABOUT */
 #about {
   background-color: var(--primary-color);
   height: 60vh;
+  column-count: 2;
+  column-gap: normal;
 }
 
 /* ATTRACTIONS */
