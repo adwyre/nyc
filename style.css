@@ -21,15 +21,44 @@ header {
 .logo {
 
 }
-nav {
+button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  border: none;
+  appearance: auto;
   position: fixed;
   width: 3rem;
   height: 3rem;
   border-radius: 50px;
   top: 4rem;
   margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+.menu-icon {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 2.4rem;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1,1.1);
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.0,0.4,0.4,1);
+}
+button:focus {
+  width: 400px;
+  height: 100vh;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 4rem 2rem;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.6,0.0,0.4,1);
 }
 
 /* HERO */
