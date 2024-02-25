@@ -4,13 +4,33 @@
   --secondary-color: #ffffff;
   --highlight-color: #f5a302;
 }
+html {
+  background-color: var(--primary-color);
+  font-family: "Fira Sans", sans-serif;
+  font-optical-sizing: auto;
+}
 body {
   width: auto;
   box-sizing: border-box;
   margin: 0;
   color: var(--secondary-color)
 }
-
+.center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container {
+  max-width: 1600px;
+}
+.divider {
+  border-top: 0.1rem solid var(--primary-light-color);
+  width: 45%;
+  height: 0.1rem;
+  margin: auto;
+  justify-self: center;
+}
 /* NAV BAR */
 header {
   background-color: none;
@@ -19,8 +39,13 @@ header {
   position: absolute;
 }
 .logo {
-
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin: auto 1rem;
 }
+
 #menu-button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -91,37 +116,56 @@ header {
 }
 #hero h1 {
   margin: auto;
+  font-weight: 900;
   font-size: max(min(6vw, 8rem), 2rem);
   width: 60vw;
   min-width: 1rem;
+  animation: fadeIn 1s ease-out;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-4rem);}
+  100% { opacity: 1; transform: translateY(0);}
 }
 /* ABOUT */
 #about {
   background-color: var(--primary-color);
-  height: 60vh;
-  column-count: 2;
-  column-gap: normal;
+  height: auto;
+  flex-direction: column;
+  margin: 4rem auto;
 }
-
+#about .container {
+  column-count: 2;
+  column-gap: 2rem;
+  padding: 2rem;
+}
+#about span {
+  float: left;
+  font-weight: 900;
+  font-size: max(min(3vw, 3.5rem), 2rem)
+}
+#about p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
 /* ATTRACTIONS */
 #attractions {
   background-color: var(--primary-color);
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
+}
+#attractions .container {
+  flex-direction: column;
+}
+#image-title {
+  margin: 8rem auto 4rem auto;
+  font-size: 2rem;
+  font-weight: bold
+  ;
 }
 #carousel {
   width: 800px;
   height: 480px;
   min-height: 480px;
   margin: auto;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 #carousel img {
   border-radius: 15px;
@@ -155,12 +199,12 @@ img[data-index="5"] {
 }
 #slider {
   appearance: none;
-  width: 20rem;
+  width: 10rem;
   height: 1rem;
   background-color: var(--primary-light-color);
   outline: none;
   border-radius: 10px; 
-  margin: auto;
+  margin: 1rem auto 8rem auto;
 }
 #slider::-webkit-slider-thumb {
   appearance: none;

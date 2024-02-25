@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&display=swap" rel="stylesheet">
   <script defer src="app.js"></script>
   <title>Document</title>
 </head>
@@ -25,29 +28,59 @@
     <section id="hero">
       <h1>"I want to be a part of it, New York, New York"</h1>
     </section>
-    <section id="about">
-      <span>New York, often called New York City or simply NYC</span>
-      <p>
-        is the most populous city in the United States, located at the southern tip of New York State on one of the world's largest natural harbors. 
-        The city comprises five boroughs, each of which is coextensive with a respective county. It is a global city and a cultural, financial, 
-        high-tech, entertainment, and media center with a significant influence on commerce, health care, scientific output, life sciences, research, 
-        technology, education, politics, tourism, dining, art, fashion, and sports. Home to the headquarters of the United Nations, New York is an 
-        important center for international diplomacy, and it is sometimes described as the world's most important city and the capital of the world.
-      </p>
-      <p>
-        New York City is frequently the setting for novels, movies, and television programs and has been described as the cultural capital of the 
-        world. In describing New York, author Tom Wolfe said, "Culture just seems to be in the air, like part of the weather."
-      </p>
-    </section>
-    <section id="attractions">
-      <div id="carousel">
-        <img data-index="1" src="public/francesca-saraco-fC9ydjoOOHA-unsplash.png"/>
-        <img data-index="2" src="public/paulo-silva-Fk-vMfM0krQ-unsplash.png"/>
-        <img data-index="3" src="public/danny-best-k97GB_NFqYo-unsplash.png"/>
-        <img data-index="4" src="public/nelson-ndongala-yoH_AXUxYWk-unsplash.png"/>
-        <img data-index="5" src="public/serena-repice-lentini-jdFwG_dW934-unsplash.png"/>
+    <section id="about" class="center">
+      <div class="container">
+        <p>
+          <span>New York, often called New York City or simply NYC</span>
+          is the most populous city in the United States, located at the southern tip of New York State on one of the world's largest natural harbors. 
+          The city comprises five boroughs, each of which is coextensive with a respective county. It is a global city and a cultural, financial, 
+          high-tech, entertainment, and media center with a significant influence on commerce, health care, scientific output, life sciences, research, 
+          technology, education, politics, tourism, dining, art, fashion, and sports. Home to the headquarters of the United Nations, New York is an 
+          important center for international diplomacy, and it is sometimes described as the world's most important city and the capital of the world.
+        </p>
+        <p>
+          New York City is frequently the setting for novels, movies, and television programs and has been described as the cultural capital of the 
+          world. In describing New York, author Tom Wolfe said, "Culture just seems to be in the air, like part of the weather."
+        </p>
+        <p>
+          The city is the birthplace of many cultural movements, including the Harlem Renaissance in literature and visual art; abstract 
+          expressionism (known as the New York School) in painting; and hip-hop, punk, hardcore, salsa, freestyle, Tin Pan Alley, 
+          certain forms of jazz, and (along with Philadelphia) disco in music. New York City has been considered the dance capital of the world.
+        </p>
+        <p>
+          The central hub of the American theater scene is Manhattan, with its divisions of Broadway, off-Broadway, and off-off-Broadway. 
+          Many movie and television stars have gotten their big break working in New York productions.
+        </p>
+        <p>
+          Broadway theatre is one of the premier forms of English-language theatre in the world, named after Broadway, the major thoroughfare that 
+          crosses Times Square, sometimes referred to as "The Great White Way".
+        </p>
+        <p>
+          Forty-one venues mostly in Midtown Manhattan's Theatre District, each with at least 500 seats, are classified as Broadway theatres. 
+          The 2018-19 Broadway theatre season set records with total attendance of 14.8 million and gross revenue of $1.83 billion Recovering 
+          from closures forced by the COVID-19 pandemic, 2022-23 revenues rebounded to $1.58 billion with total attendance of 12.3 million.
+        </p>
+        <p>
+          The Tony Awards recognizes excellence in live Broadway theatre and are presented at an annual ceremony in Manhattan. The awards are given 
+          for Broadway productions and performances at the 41 eligible Broadway venues. One is also given for regional theatre. Several discretionary 
+          non-competitive awards are given as well, including a Special Tony Award, the Tony Honors for Excellence in Theatre, and the Isabelle Stevenson Award.
+        </p>
       </div>
-      <input type="range" min="10" max="50" value="10" step="10" id="slider">
+    </section>
+    <div class="divider"></div>
+    <section id="attractions" class="center">
+      <div class="container center">
+        <span id="image-title">Brooklyn Bridge</span>
+        <div id="carousel" class="center">
+          <img data-index="1" src="public/francesca-saraco-fC9ydjoOOHA-unsplash.png"/>
+          <img data-index="2" src="public/paulo-silva-Fk-vMfM0krQ-unsplash.png"/>
+          <img data-index="3" src="public/danny-best-k97GB_NFqYo-unsplash.png"/>
+          <img data-index="4" src="public/nelson-ndongala-yoH_AXUxYWk-unsplash.png"/>
+          <img data-index="5" src="public/serena-repice-lentini-jdFwG_dW934-unsplash.png"/>
+        </div>
+        <input type="range" min="10" max="50" value="10" id="slider">
+      </div>
+      
     </section>
   </main>
   <footer></footer>

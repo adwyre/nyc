@@ -9,6 +9,7 @@ var currIndex = slider.value/10;
 // On slider change update index and image transforms
 slider.oninput = function() {
   currIndex = this.value/10;
+  if (indexes.includes(currIndex)) {
     // For each index set the styles according to relative position to the current index
     for (let i = 0; i < indexes.length; i++ ) {
       var elements = []
@@ -28,4 +29,5 @@ slider.oninput = function() {
       }
     }
   }
+}
 
