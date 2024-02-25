@@ -1,28 +1,57 @@
+:root {
+  --primary-color: #1c232b;
+  --primary-light-color: #4a525c;
+  --secondary-color: #ffffff;
+  --highlight-color: #f5a302;
+}
 body {
   width: auto;
   box-sizing: border-box;
   margin: 0;
+  color: var(--secondary-color)
 }
 
 /* NAV BAR */
+header {
+  background-color: none;
+  height: 4rem;
+  width: 100%;
+  position: absolute;
+}
 .logo {
 
 }
 nav {
-
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  top: 4rem;
+  margin: 20px;
 }
 
 /* HERO */
 #hero {
-
+  color: var(--primary-color);
+  background-color: var(--highlight-color);
+  height: 100vh;
 }
 
 /* ABOUT */
 #about {
-
+  background-color: var(--primary-color);
+  height: 60vh;
 }
 
 /* ATTRACTIONS */
 #attractions {
+  background-color: var(--primary-color);
+  height: 60vh;
+}
 
+/* FOOTER */
+footer {
+  background-color: var(--primary-light-color);
 }
