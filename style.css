@@ -31,6 +31,15 @@ body {
   margin: auto;
   justify-self: center;
 }
+.hidden {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  transform: translateX(8rem);
+}
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 /* NAV BAR */
 header {
   background-color: none;

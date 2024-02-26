@@ -1,3 +1,4 @@
+// CAROUSEL ANIMATION
 // Get slider
 var slider = document.getElementById("slider");
 // Get Image Label
@@ -9,6 +10,7 @@ var opacities = [1, 0.5, 0.1, 0, 0]
 var scales = [1, 0.9, 0.8, 0.7, 0.6]
 // Set image labels 
 var imageTitles = ["Central Park", "Times Square", "Brooklyn Bridge", "Empire State Building", "Statue of Liberty"]
+
 // Get current index
 var currIndex = slider.value/10;
 
@@ -42,3 +44,17 @@ slider.oninput = function() {
   }
 }
 
+// FADE IN ON SCROLL
+// Create new observer. Add show class when intersecting else remove show class
+const observer = new IntersectionObserver ((elements) => {
+  elements.forEach((element) => {
+    if (element.isIntersecting) {
+      element.target.classList.add('show')
+    } else {
+      element.target.classList.remove('show')
+    }
+  })
+})
+const hiddenElements = document.querySelectorAll('.hidden')
+// Observe all hidden elements
+hiddenElements.forEach((element) => observer.observe(element))
