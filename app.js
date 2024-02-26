@@ -8,7 +8,7 @@ var indexes = [1, 2, 3, 4, 5]
 var opacities = [1, 0.5, 0.1, 0, 0]
 var scales = [1, 0.9, 0.8, 0.7, 0.6]
 // Set image labels 
-var imageTitles = ["Brooklyn Bridge", "Times Square", "Central Park", "Empire State Building", "Statue of Liberty"]
+var imageTitles = ["Central Park", "Times Square", "Brooklyn Bridge", "Empire State Building", "Statue of Liberty"]
 // Get current index
 var currIndex = slider.value/10;
 
