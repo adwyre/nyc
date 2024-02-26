@@ -1,6 +1,6 @@
 # nyc
 
-This project showcases responsive design and animations completed with HTML, CSS, Vanilla JavaScript.
+This project showcases responsive design and animations completed with HTML, CSS, Vanilla JavaScript.<br>
 <a href="https://nyc-site-showcase.netlify.app/" target="_blank">Live Link</a>
 
 ###Menu button<br>
